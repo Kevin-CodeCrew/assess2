@@ -15,9 +15,10 @@ You will create a guestbook applcation that will let you enter invitations and r
   - `GuestBookListRsvp` Lists the guests that have RSVPed
   
 `AppContainer`
-- As part of component state, have an array that contains guests that have NOT RSVPed
+- Displays an `<h1>` heading of `Guest List Manager`
+- As part of component state, have a `GuestBookList` array that contains guests that have *NOT* RSVPed
   - This array will be passed down to the child component `GuestBookList` to be rendered
-- As part of component state, have an array that contains guests that have RSVPed
+- As part of component state, have a `GuestBookListRsvp` array that contains guests that *have* RSVPed
   - This array will be passed down to the child component `GuestBookListRsvp` to be rendered
 - Has a callback method called `addGuest` that accepts 2 parameters (an object containing the guest's information and a boolean that specifies if the guest has RSVPed) and that will be passed down to the `GuestBookForm` child component
   - When the callback method is called, the component will update the appropriate array in component state
@@ -39,4 +40,18 @@ You will create a guestbook applcation that will let you enter invitations and r
   ```
   - Pass a boolean value argument to callback method that specifies if the `guestRsvpStatus` is `true` or `false`
   
+  `GuestBookList`
+  - Should contain a basic header `Waiting for Response`
+  - Should list each name and phone number in the `GuestBookList` array passed down from the parent component
+  
+  `GuestBookListRsvp`
+  - Should contain a basic header `RSVPed`
+  - Should list each name and phone number in the `GuestBookList` array passed down from the parent component
+  
+Layout
+- You *must* use CSS grid for this layout
+- In addition to displaying the application header (from `AppContainer`) your layout should include 3 columns
+  - The form for entering guests
+  - The list of guests who have not RSVPed
+  - The list of guests who have RSVPed
   
