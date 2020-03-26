@@ -55,3 +55,14 @@ Layout
   - The list of guests who have not RSVPed
   - The list of guests who have RSVPed
   
+Git
+- Commit and push your changes no less than *once per hour*
+
+----------------------------------------------------------------------------------------------------
+Take some time at start to do some pre-thinking and design. At *minimum* you should have a basic wireframe drawn up (ADD A PICTURE OF DESIGN TO REPO)
+
+If you need clarification of requirements *ASK EARLY*. Do not wait until right before it is due
+
+Read errors *CAREFULLY* when solving issues as Code School staff cannot help with bugs in your code
+
+Take your time. Code a little, test a little, and Good Luck!
